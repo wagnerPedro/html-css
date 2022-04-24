@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo de Hover</title>
+    <style>
+        body{
+            font-family: 'Courier New', Courier, monospace;
+        }
+        div > p{ /* esconde o parágrafo que está dentro da div*/
+            display: none;
+        }
+
+        div:hover > p { /* configuração que irá exibir dentro do parágrafo, quando passar o mouse */
+            display: block;
+            color: white;
+            background-color: red;
+            width: 200px;
+            text-align: center;
+
+        }
+
+        div:hover{ /* mudança/efeito ao passar o mouse sobre a div */
+            color: chocolate;
+        }
+
+    </style>
+
+</head>
+<body>
+    <h1>Exemplo de hover</h1>
+    <p>Passe o mouse sobre o texto abaixo:</p>
+    <div>
+        Passe o mouse aqui
+        <p>TEXTO ESCONDIDO!!!</p>
+    </div>
+    <P>FIM!</P>
+</body>
+</html>
